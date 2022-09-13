@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap");
+:root {
+  /* FONT */
+  --FONT-WEIGHT: 400;
+  --FONT-WEIGHT-DARKER: 700;
+  --FONT-SIZE: 0.9375rem;
+  /* || COLORS */
+  --MAIN-BACKGROUND: hsl(233, 47%, 7%);
+  --CARD-BACKGROUND: hsl(244, 38%, 16%);
+  --ACCENT-COLOR: hsl(277, 64%, 61%);
+  /* || TEXT COLORS */
+  --MAIN-TEXT-COLOR: hsl(0, 0%, 100%);
+  --TRANSPARENT-TEXT-COLOR: hsla(0, 0%, 100%, 0.75);
+  --SLIGHTLY-TRANSPARENT-TEXT-COLOR: hsla(0, 0%, 100%, 0.6);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--MAIN-BACKGROUND);
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 10px;
+  background-color: var(--CARD-BACKGROUND);
+  overflow: hidden;
+}
+.primary-image {
+  display: flex;
+  background-color: #5a3270;
+}
+.primary-image img {
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+}
+.whole-message {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.whole-message h2 {
+  font-family: "Lexend Deca";
+}
+.whole-message .primary-message {
+  padding: 0 1.5rem;
+}
+.accent {
+  color: var(--ACCENT-COLOR);
+}
+.transparent {
+  font-family: "inter";
+  font-size: var(--FONT-SIZE);
+  color: var(--SLIGHTLY-TRANSPARENT-TEXT-COLOR);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.achievements {
+  font-size: 20px;
+  line-height: 1.75rem;
+}
+.achievements .slightly-transparent {
+  font-family: "inter";
+  display: block;
+  color: var(--TRANSPARENT-TEXT-COLOR);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+
+.slightly-transparent:last-child {
+  padding-bottom: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+ 
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 376px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    right: 5px;
+  }
+  .whole-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .whole-message .primary-message {
+    padding: 0 100px;
+    font-size: 2rem;
+  }
+
+  .transparent {
+    text-align: left;
+    padding: 1rem 200px;
+    font-size: 15px;
+  }
+  .achievements {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
