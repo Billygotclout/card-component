@@ -43,7 +43,7 @@ main {
   opacity: 0.4;
 }
 .whole-message {
-  padding: 0.5rem 1rem;
+  padding: 3rem 0.5rem;
   text-align: center;
 }
 
@@ -83,9 +83,6 @@ main {
 .attribution {
   font-size: 11px;
   text-align: center;
-
-  
- 
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -121,7 +118,7 @@ main {
     justify-content: space-evenly;
   }
   .attribution {
-    
+    position: absolute;
     bottom: 0;
     left: 600px;
    
