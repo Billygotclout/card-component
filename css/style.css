@@ -94,6 +94,8 @@ main {
     display: flex;
     flex-direction: row-reverse;
     position: absolute;
+    margin-left: 15rem;
+    margin-right: 15rem;
     top: 20%;
     left: 5px;
     right: 5px;
@@ -108,22 +110,22 @@ main {
   .whole-message .primary-message {
     padding: 0 100px;
     font-size: 2rem;
+    text-align: left;
   }
 
   .transparent {
     text-align: left;
-    padding: 1rem 200px;
+    padding: 2rem 100px;
     font-size: 15px;
   }
   .achievements {
     display: flex;
     justify-content: space-evenly;
+    
   }
   .attribution {
     position: absolute;
     bottom: 0;
     left: 600px;
-   
   }
-
 }
